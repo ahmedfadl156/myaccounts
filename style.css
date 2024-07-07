@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3498db; /* Set blue background color for the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(29, 52, 79, 0.9); /* Semi-transparent white background for the container */
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width of the container */
+    box-shadow: 0 4px 8px rgba(79, 2, 233, 0.1); /* Soft shadow effect */
+}
+
+h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(19, 107, 127, 0.7); /* Semi-transparent white background for the icons area */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, 0.3);
+    transition: all 0.3s ease-out;
+}
+
+.icon:hover {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    color: #fff;
+    background: #2980b9; /* Darker blue on hover */
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, 0.5);
+}
+
+.icon:hover i {
+    color: #fff;
+}
+
+.icon .fa-facebook-f {
+    color: #1A6ED8;
+}
+
+.fb:hover {
+    background: #1A6ED8;
+}
+
+.icon .fa-twitter {
+    color: #1DA1F2;
+}
+
+.twt:hover {
+    background: #1DA1F2;
+}
+
+.icon .fa-instagram {
+    color: #E4405F;
+}
+
+.ig:hover {
+    background: #E4405F;
+}
+
+.icon .fa-tiktok {
+    color: #69C9D0;
+}
+
+.tt:hover {
+    background: #69C9D0;
+}
+
+.icon .fa-github {
+    color: #000;
+}
+
+.git:hover {
+    background: #000;
+}
+
+.icon .fa-whatsapp {
+    color: #25D366; /* WhatsApp green color */
+}
+
+.wa:hover {
+    background: #25D366; /* WhatsApp green color on hover */
+}
+
+/* responsive */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .main {
+        flex-direction: column;
+    }
+}
